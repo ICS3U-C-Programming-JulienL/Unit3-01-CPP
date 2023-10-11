@@ -10,7 +10,7 @@
 
 int main() {
     // declare variables and constants
-    float subtotal, tax, total, roundedTotal, roundedTax;
+    float subtotal, tax, total;
     const float HST = 0.15;
 
     // get the subtotal
@@ -18,7 +18,7 @@ int main() {
     std::cout << "Enter the subtotal cost ($) for your item: ";
     std::cin >> subtotal;
 
-    // calculate subtotal, tax, and total
+    // calculate tax and total
     tax = HST * subtotal;
     total = subtotal + tax;
 
